@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button,
         Platform,
@@ -14,26 +15,24 @@ import {  createNavigator,
  } from 'react-navigation';
 
 import MapView from 'react-native-maps';
-import HomeScreen from './HomeScreen';
-import MapScreen from './MapScreen';
-
-
-//Custom developed imports
-var Description = require('./description');
 var styles = require('./Styles');
 
-const Routes = TabNavigator({
-  Home: { screen: HomeScreen },
-  MNPMap: { screen: MapScreen },
-  Description: { screen: Description }
-});
 
-export default class App extends React.Component {
+class MapScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Map View',
+  };
   render() {
     return (
-       <Routes />
+      <MapView style={styles.container}
+    initialRegion={{
+      latitude: 43.218547,
+      longitude: -88.030357,
+      latitudeDelta: 0.0922,
+      longitudeDelta: 0.0421,
+    }}
+  />
     );
   }
 }
-
-
+module.exports = MapScreen;
