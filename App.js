@@ -24,7 +24,7 @@ var styles = require('./Styles');
 
 const Routes = TabNavigator({
   Home: { screen: HomeScreen },
-  MNPMap: { screen: MapScreen },
+  MapScreen: { screen: MapScreen },
   Description: { screen: Description }
 });
 
@@ -35,5 +35,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-
