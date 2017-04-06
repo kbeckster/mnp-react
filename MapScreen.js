@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Button,Platform,ScrollView,StyleSheet,Text,TouchableOpacity,View} from 'react-native';
+import { Button,Platform,ScrollView,StyleSheet,Text,TouchableOpacity,View, Image} from 'react-native';
 //import {  createNavigator,createNavigationContainer,TabRouter,addNavigationHelpers,TabNavigator} from 'react-navigation';
 
 import MapView from 'react-native-maps';
@@ -13,20 +13,28 @@ class MapScreen extends React.Component {
   };
   render() {
     return (
-      <MapView
-        region={{
-          latitude: 43.218547,
-          longitude: -88.030357,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-        }}
-        //onRegionChange={this.onRegionChange}
-        style = {styles.container}
+
+      <MapView style={styles.container}
+      initialRegion={{
+        latitude: 43.218547,
+        longitude: -88.030357,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421,
+      }}
       >
-        <MapView.UrlTile
-          urlTemplate={'./winter_static2.png'}
-        />
+      <View pointerEvents="none" style={{position: 'absolute', top: 43.218547, left: -88.030357}}>
+      <Image source={{uri: './winter_static2.png'}} />
+      </View>
+
       </MapView>
+
+
+
+
+
+
+
+
     );
   }
 }
