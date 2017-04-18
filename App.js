@@ -16,6 +16,7 @@ import {  createNavigator,
 import MapView from 'react-native-maps';
 import HomeScreen from './HomeScreen';
 import MapScreen from './MapScreen';
+import MapScreenBK from './MapScreenBK';
 
 
 //Custom developed imports
@@ -25,6 +26,7 @@ var styles = require('./Styles');
 const Routes = TabNavigator({
   Home: { screen: HomeScreen },
   MapScreen: { screen: MapScreen },
+  MapScreenBK: { screen: MapScreenBK },
   Description: { screen: Description }
 });
 

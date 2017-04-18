@@ -15,7 +15,7 @@ class HomeScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return(
       <View>
-        <Button onPress={() => navigate('MapScreen')} title="Link to somewhere" />
+        <Button onPress={() => navigate('MapScreenBK')} title="Test Link" />
       </View>
   );
   }
