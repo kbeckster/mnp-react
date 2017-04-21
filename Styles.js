@@ -3,6 +3,9 @@ var React = require('react-native');
 
 var StyleSheet = React.StyleSheet.create({
   test: {
+          flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
     color: '#FF69B4'
   },
   container: {
@@ -11,7 +14,7 @@ var StyleSheet = React.StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-      tabContainer: {
+    tabContainer: {
       flexDirection: 'row',
       height: 48,
     },
@@ -24,9 +27,23 @@ var StyleSheet = React.StyleSheet.create({
       borderColor: '#ddd',
       borderRadius: 4,
     },
-    description: {
-      alignItems: 'center',
-      justifyContent: 'center',
+    mapcontainer: {
+      flex: 1,
+       justifyContent: 'center',
+       alignItems: 'center',
+       backgroundColor: '#F5FCFF',
+    },
+    map: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+    },
+    marker: {
+      marginLeft: 46,
+      marginTop: 33,
+      fontWeight: 'bold',
     }
 
 });
