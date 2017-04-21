@@ -1,8 +1,8 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 90597,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
   "expoServerNgrokUrl": "https://kp-rg7.kbeckster.mnp-react.exp.direct",
   "packagerNgrokUrl": "https://packager.kp-rg7.kbeckster.mnp-react.exp.direct",
-  "ngrokPid": 90612
+  "ngrokPid": 1461
 }
