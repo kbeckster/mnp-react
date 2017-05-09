@@ -7,6 +7,8 @@ var styles = require('./Styles');
 
 
 class MapScreen extends React.Component {
+
+
   constructor(props) {
     super(props);
 
@@ -53,20 +55,21 @@ class MapScreen extends React.Component {
 
     render() {
       return (
-          <MapView style={styles.map}
-          initialRegion={this.state.region}
-          onRegionChange={this.onRegionChange}
-          >
-          {this.state.markers.map(marker => (
-            <MapView.Marker
-              key={marker.key}
-              //image={require('./treemoji.png')}
-              coordinate={marker.latlng}
-              title={marker.title}
-              description={marker.description}
-              />
-            ))}
-          </MapView>
+                  <MapView style={styles.map}
+                  initialRegion={this.state.region}
+                  onRegionChange={this.onRegionChange}
+                  >
+                  {this.state.markers.map(marker => (
+                    <MapView.Marker
+                      key={marker.key}
+                      image={require('./pointofinterest_mapicon.png')}
+                      coordinate={marker.latlng}
+                      title={marker.title}
+                      description={marker.description}
+                      />
+                    ))}
+                  </MapView>
+
       );
   }
 }
