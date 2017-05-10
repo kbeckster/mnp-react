@@ -5,10 +5,7 @@ import { Button,Platform,ScrollView,StyleSheet,Text,TouchableOpacity,View, Image
 import MapView from 'react-native-maps';
 var styles = require('./Styles');
 
-
 class MapScreen extends React.Component {
-
-
   constructor(props) {
     super(props);
 
@@ -55,6 +52,9 @@ class MapScreen extends React.Component {
 
     render() {
       return (
+
+
+
                   <MapView style={styles.map}
                   initialRegion={this.state.region}
                   onRegionChange={this.onRegionChange}
