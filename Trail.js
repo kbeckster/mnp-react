@@ -2,16 +2,14 @@ import React from 'react';
 import { StyleSheet, Text} from 'react-native';
 var styles = require('./Styles');
 
-var Description = React.createClass({
+var Trail = React.createClass({
   render() {
     return (
-      <Text style={styles.container}>
-        Restore
-        Explore
-        Discover
+      <Text style={styles.temp}>
+        Trail Map goes here
       </Text>
     );
   }
 });
 
-module.exports = Description;
+module.exports = Trail;

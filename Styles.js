@@ -2,15 +2,25 @@
 var React = require('react-native');
 
 var StyleSheet = React.StyleSheet.create({
-  test: {
-    color: '#FF69B4'
+  temp: {
+    padding: 100
   },
   icon: {
     width: 26,
     height: 26,
   },
   footer:{
-
+  },
+  header:{
+    height:40,
+  },
+  listview:{
+    marginTop:100
+  },
+  locationRow:{
+    padding: 50,
+    borderColor: '#E8E8E8',
+    borderWidth: 1,
   },
   map: {
       position: 'absolute',
