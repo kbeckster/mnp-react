@@ -32,7 +32,6 @@ export default class App extends React.Component {
     return (
       <View style={{flex: 1}}>
       <View style={styles.header}/>
-      <Text style={styles.mnp}> MNP </Text>
       <Text style={styles.donatebutton}> Donate </Text>
         <Routes/>
       </View>

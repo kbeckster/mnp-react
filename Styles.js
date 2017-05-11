@@ -15,8 +15,23 @@ var StyleSheet = React.StyleSheet.create({
     height:40,
   },
   listview:{
-    marginTop:100
+    marginTop:25,
+    marginLeft:25,
+    marginRight:25
   },
+  donatebutton:{
+    marginLeft:300
+  },
+  locationHeaderText: {
+    justifyContent: 'center',
+    padding: 20,
+    borderColor: '#E8E8E8',
+    borderWidth: 1,
+    borderBottomColor: '#fff'
+  },
+  locationHeader: {
+      flexDirection: 'row',
+    },
   locationRow:{
     padding: 50,
     borderColor: '#E8E8E8',

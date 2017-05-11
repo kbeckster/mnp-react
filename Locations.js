@@ -32,6 +32,7 @@ class Locations extends React.Component {
         style={styles.listview}
         dataSource={this.state.dataSource}
         renderRow={(data) => <View style={styles.locationRow}><Text>{data}</Text></View>}
+        renderHeader={() => <View style= {styles.locationHeader}><Text style={styles.locationHeaderText}>B</Text><Text style={styles.locationHeaderText}>W</Text><Text style={styles.locationHeaderText}>T</Text></View>}
       />
 
 
