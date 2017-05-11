@@ -1,3 +1,20 @@
+This repository contains an in-progress app that will eventually become an interactive trail map for the Mequon Nature Preserve visitors.
+
+To see the latest updates to the app on your phone install the Expo app
+
+[iOS](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8)
+[android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en)
+
+Then, from within Expo, navigate to https://exp.host/@kbeckster/my-app
+
+
+
+
+
+
+
+***** Auto Generated README *******
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
