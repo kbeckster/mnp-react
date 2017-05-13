@@ -3,7 +3,10 @@ import React from 'react';
 import { Button,Platform,ScrollView,StyleSheet,Text,TouchableOpacity,View, Image} from 'react-native';
 
 import MapView from 'react-native-maps';
-var styles = require('./Styles');
+
+//Custom styles
+import styles from '../styles/Styles';
+
 
 class MapScreen extends React.Component {
   constructor(props) {
@@ -62,7 +65,7 @@ class MapScreen extends React.Component {
                   {this.state.markers.map(marker => (
                     <MapView.Marker
                       key={marker.key}
-                      image={require('./pointofinterest_mapicon.png')}
+                      image={require('../img/pointofinterest_mapicon.png')}
                       coordinate={marker.latlng}
                       title={marker.title}
                       description={marker.description}

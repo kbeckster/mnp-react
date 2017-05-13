@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, ListView} from 'react-native';
-var styles = require('./Styles');
 
+//Custom styles
+import styles from '../styles/Styles';
 
 
 class Locations extends React.Component {

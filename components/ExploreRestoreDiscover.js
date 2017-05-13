@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text} from 'react-native';
-var styles = require('./Styles');
+
+//Custom styles
+import styles from '../styles/Styles';
+
 
 var ExploreRestoreDiscover = React.createClass({
   render() {

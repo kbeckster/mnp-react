@@ -4,13 +4,14 @@ import {createNavigator,createNavigationContainer,TabRouter,addNavigationHelpers
 import MapView from 'react-native-maps';
 
 //Custom created Views
-import MapScreen from './MapScreen';
-import Locations from './Locations';
-import ExploreRestoreDiscover from './ExploreRestoreDiscover';
-import Trail from './Trail';
+import MapScreen from './components/MapScreen';
+import Locations from './components/Locations';
+import ExploreRestoreDiscover from './components/ExploreRestoreDiscover';
+import Trail from './components/Trail';
 
-//Custom developed imports
-var styles = require('./Styles');
+//Custom styles
+import styles from './styles/Styles';
+
 
 const Routes = TabNavigator({
   Home: { screen: MapScreen },
