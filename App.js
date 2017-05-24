@@ -17,11 +17,12 @@ const Routes = TabNavigator({
   Home: { screen: MapScreen },
   Locations: { screen: Locations },
   ExplRestDisc: { screen: ExploreRestoreDiscover },
-  Trail: { screen: Trail }
-}, {
+  Trail: { screen: Trail },
+},
+ {
+  swipeEnabled: true,
+  tabBarPosition: 'bottom',
   tabBarOptions : {
-    style: {
-    },
     showIcon: true,
     inactiveTintColor: '#000',
     inactiveTintColor: '#000'
@@ -31,7 +32,7 @@ const Routes = TabNavigator({
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.main}>
       <View style={styles.header}/>
       <Text style={styles.donatebutton}> Donate </Text>
         <Routes/>

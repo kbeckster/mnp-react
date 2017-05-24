@@ -1,22 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ListView} from 'react-native';
+import { StyleSheet, Text, View, Button, ListView, Image} from 'react-native';
+
+//Custom created Views
+import LocationsHeader from './LocationsHeader';
 
 //Custom styles
-import styles from '../styles/Styles';
-
+import styles from '../styles/locations-styles';
 
 class Locations extends React.Component {
-
-//static navigationOptions = {
-//   tabBarLabel: 'LocTest',
-//   // Note: By default the icon is only shown on iOS. Search the showIcon option below.
-//   tabBarIcon: ({ tintColor }) => (
-//     <Image
-//       source={require('./trails_button.png')}
-//       style={[styles.icon, {tintColor: tintColor}]}
-//     />
-//   ),
-// };
 
   constructor(props) {
     super(props);
@@ -33,7 +24,9 @@ class Locations extends React.Component {
         style={styles.listview}
         dataSource={this.state.dataSource}
         renderRow={(data) => <View style={styles.locationRow}><Text>{data}</Text></View>}
-        renderHeader={() => <View style= {styles.locationHeader}><Text style={styles.locationHeaderText}>B</Text><Text style={styles.locationHeaderText}>W</Text><Text style={styles.locationHeaderText}>T</Text></View>}
+        //renderHeader={() => <View style= {styles.locationHeader}><Text style={styles.locationHeaderText}>B</Text><Text style={styles.locationHeaderText}>W</Text><Text style={styles.locationHeaderText}>T</Text></View>}
+        renderHeader={() => <LocationsHeader />}
+
       />
 
 
